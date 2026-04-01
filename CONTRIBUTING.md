@@ -14,7 +14,7 @@ If you prefer to install only the runtime package:
 
 ```bash
 python3 -m pip install -e .
-python3 -m pip install pytest wheel
+python3 -m pip install pytest wheel build twine
 ```
 
 ## Running Tests
@@ -29,6 +29,13 @@ Run the whole test suite:
 
 ```bash
 python3 -m pytest
+```
+
+Build and verify release artifacts:
+
+```bash
+python3 -m build
+python3 -m twine check dist/*
 ```
 
 ## Project Expectations

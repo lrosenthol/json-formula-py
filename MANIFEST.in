@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include LICENSE.upstream
+include NOTICE.upstream.txt
+include CONTRIBUTING.md
+include pyproject.toml
+include setup.py
+recursive-include src/json_formula/_vendor/json_formula_js *.js *.mjs *.json
+recursive-include src/json_formula/_vendor/json_formula_js/tutorial *.js
+recursive-include tests *.py
+recursive-include tests/fixtures/official *.json

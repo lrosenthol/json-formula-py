@@ -37,7 +37,7 @@ alongside the editable package:
 
 ```bash
 python3 -m pip install -e .
-python3 -m pip install pytest wheel
+python3 -m pip install pytest wheel build twine
 ```
 
 ## Quick Start
@@ -169,6 +169,20 @@ Run all tests:
 
 ```bash
 python3 -m pytest
+```
+
+## Building Distributions
+
+Build source and wheel distributions:
+
+```bash
+python3 -m build
+```
+
+Validate the generated package metadata:
+
+```bash
+python3 -m twine check dist/*
 ```
 
 The official-suite harness uses the fixture corpus under

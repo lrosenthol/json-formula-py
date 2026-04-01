@@ -13,11 +13,27 @@ setup(
     long_description=(ROOT / "README.md").read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
     author="OpenAI Codex",
-    license="MIT",
+    url="https://github.com/lrosenthol/json-formula-py",
+    project_urls={
+        "Documentation": "https://github.com/lrosenthol/json-formula-py#readme",
+        "Issues": "https://github.com/lrosenthol/json-formula-py/issues",
+        "Specification": "https://opensource.adobe.com/json-formula/",
+        "Reference Implementation": "https://github.com/adobe/json-formula/",
+    },
     python_requires=">=3.9",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     include_package_data=True,
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
     package_data={
         "json_formula": [
             "_vendor/json_formula_js/*.js",
